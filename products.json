@@ -3,64 +3,64 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "queen panel bed",
-        "price": 10.99,
+        "title": "Nasi Goreng Ayam",
+        "price": 25000,
         "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } }
       }
     },
     {
       "sys": { "id": "2" },
       "fields": {
-        "title": "king panel bed",
-        "price": 12.99,
+        "title": "Sate Ayam",
+        "price": 20000,
         "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
       }
     },
     {
       "sys": { "id": "3" },
       "fields": {
-        "title": "single panel bed",
-        "price": 12.99,
+        "title": "Bakmi Goreng",
+        "price": 15000,
         "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } }
       }
     },
     {
       "sys": { "id": "4" },
       "fields": {
-        "title": "twin panel bed",
-        "price": 22.99,
+        "title": "Ayam Geprek",
+        "price": 15000,
         "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
       }
     },
     {
       "sys": { "id": "5" },
       "fields": {
-        "title": "fridge",
-        "price": 88.99,
+        "title": "Gado Gado",
+        "price": 10000,
         "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
       }
     },
     {
       "sys": { "id": "6" },
       "fields": {
-        "title": "dresser",
-        "price": 32.99,
+        "title": "Gulai Ayam",
+        "price": 20000,
         "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
       }
     },
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "couch",
-        "price": 45.99,
+        "title": "Mujair Bakar",
+        "price": 35000,
         "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
       }
     },
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "table",
-        "price": 33.99,
+        "title": "Soto Ayam",
+        "price": 20000,
         "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
       }
     }

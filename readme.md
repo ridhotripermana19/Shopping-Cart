@@ -1,5 +1,3 @@
-Progress Pertemuan 11
+Progress Pertemuan 10
 
-- Menambahkan Cart Component
-- Menampilkan data product kedalam template dari dynamic data
-- Menyimpan data product kedalam local storage
+- Membuat Navigation Bar, Hero, dan Section Component

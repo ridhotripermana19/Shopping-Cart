@@ -1,7 +1,7 @@
 {
   "name": "Shopping Cart",
   "short_name": "ShoppingCart",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#FFE902",
   "theme_color": "#f09d51",

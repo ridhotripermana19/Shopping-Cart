@@ -1,7 +1,6 @@
-const staticCacheName = "site-static";
-const dynamicCacheName = "site-dynamic";
+const cacheKey = "site-cache";
 
-const cacheStaticAssets = [
+const assets = [
   "products.json",
   "styles.css",
   "https://use.fontawesome.com/releases/v5.8.1/css/all.css",
@@ -29,9 +28,9 @@ const cacheStaticAssets = [
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
-      .open(staticCacheName)
+      .open(cacheKey)
       .then((cache) => {
-        cache.addAll(cacheStaticAssets);
+        cache.addAll(assets);
       })
       .catch(console.error)
   );
@@ -42,9 +41,7 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
-        keys
-          .filter((key) => key !== staticCacheName && key !== dynamicCacheName)
-          .map((key) => caches.delete(key))
+        keys.filter((key) => key !== cacheKey).map((key) => caches.delete(key))
       );
     })
   );
@@ -56,7 +53,7 @@ self.addEventListener("fetch", (event) => {
       (result) =>
         result ||
         fetch(event.request).then(async (fetchRequest) => {
-          const cache = await caches.open(dynamicCacheName);
+          const cache = await caches.open(cacheKey);
           cache.put(event.request.url, fetchRequest.clone());
           return fetchRequest;
         })

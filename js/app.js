@@ -460,6 +460,20 @@ function setupApp() {
   document.querySelector(".close-cart").addEventListener("click", hideCart);
 }
 
+/** Belum Dokumentasi */
+async function registerSW() {
+  try {
+    if ("serviceWorker" in navigator) {
+      var reg = await navigator.serviceWorker.register("/sw.js");
+      console.log("service worker is running", reg);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+registerSW();
+
 // Ketika HTML Document berhasil di load maka akan menjalankan
 // beberapa function yaitu:
 // * 1. setupApp()

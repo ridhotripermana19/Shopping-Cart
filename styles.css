@@ -204,10 +204,37 @@ body {
 .transparentBcg {
   visibility: visible;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 360px) {
   .cart {
     width: 30vw;
-    min-width: 450px;
+    min-width: 280px;
+  }
+  .fa-window-close {
+    font-size: 22px;
+  }
+  .cart h2 {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 2rem;
+    font-size: 18px;
+  }
+  .cart-footer h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 15px;
+  }
+  .banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 15px;
+    background: var(--primaryColor);
+    color: var(--mainBlack);
+    border: 1px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    cursor: pointer;
+    font-size: 15px;
   }
 }
 

@@ -1,9 +1,3 @@
-Progress Pertemuan 12
+Progress Pertemuan 13
 
-- Menambahkan event click listener pada button add to bag.
-- Disable button ketika item telah ditambahkan ke cart.
-- Mengambil data product di local storage berdasarkan id.
-- Simpan data cart ke local storage.
-- Menambahkan logic untuk menghitung jumlah total dan jumlah item yang ditambahkan ke cart.
-- Membuat literal template cart item berdasarkan data product yang diberikan.
-- Menampilkan cart ketika button add to bag ditampilkan.
+- Pada pertemuan ke – 13 ini tidak terdapat perubahan pada data (product.json) ataupun html templatenya (index.html). Hanya terdapat perubahan atau penambahan logic pada script filenya saja (app.js) 

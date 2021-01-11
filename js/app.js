@@ -460,18 +460,32 @@ function setupApp() {
   document.querySelector(".close-cart").addEventListener("click", hideCart);
 }
 
-/** Belum Dokumentasi */
+/**
+ * Register Service Worker
+ *
+ * @returns void
+ */
 async function registerSW() {
   try {
+    // Jika service worker di support oleh browser
+    // maka register file service worker yang ada pada
+    // root direcotry dengan nama file sw.js
     if ("serviceWorker" in navigator) {
       var reg = await navigator.serviceWorker.register("/sw.js");
       console.log("service worker is running", reg);
+    } else {
+      // Jika browser tidak support maka tampilkan log ke console
+      // dengan pesan servicr worker not supported!
+      console.log("Service Worker not supported!");
     }
   } catch (e) {
+    // Jika terdapat error pada saat menregister service worker
+    // tampilkan error ke console.
     console.error(e);
   }
 }
 
+// Jalankan function registerSW() untuk mendaftarkan service worker!
 registerSW();
 
 // Ketika HTML Document berhasil di load maka akan menjalankan

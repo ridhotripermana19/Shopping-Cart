@@ -3,7 +3,7 @@
   "short_name": "ShoppingCart",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FFE902",
+  "background_color": "#FFE903",
   "theme_color": "#f09d51",
   "orientation": "portrait-primary",
   "icons": [
